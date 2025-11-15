@@ -4,23 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        #mydiv{
+            position: relative;
+            background-color: brown;
+            animation: anim 3s linear 0s infinite normal none;
+
+        }
+
+        @keyframes anim {
+            0%{
+                top: 0px;
+                left: 0px;
+            }
+            25%{
+                top: 0px;
+                left: 400px;
+            }
+            50%{
+                top: 400px;
+                left: 400px;
+            }
+            75%{
+                top: 400px;
+                left: 0px;
+            }
+            100%{
+                top: 0px;
+                left: 0px;
+
+            }
+        }
+    </style>
 </head>
 <body>
 
-    <h1>hello world</h1>
-    <h1>hello world</h1>
-    <h1>hello world</h1>
-    <h2>dhjjasdj</h2>
-    <h2>dhjjasdj</h2>
-
-    <p>dsjfkhsdf
-
-
-    </p>
-
-    <div>
-        shfkhsfjhsd
+    <div id="mydiv" style="border:1px solid black; width: 100px; height: 100px; background-color: red;">
+        hi all
     </div>
+    
     
 </body>
 </html>
